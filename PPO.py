@@ -238,7 +238,7 @@ class PPO:
             ep_rewards = []
             ep_actions = []
             ep_states = []
-            action_probs_list = []  # To store action probabilities
+            
             score = 0
             while not is_terminal:
                 if render:
@@ -246,7 +246,7 @@ class PPO:
                 s0 = np.array(observation)
                 # Get action probabilities
                 action_probs = self.Pi.get_dist(s0[np.newaxis, :])[0]
-                action_probs_list.append(action_probs)  # Store for plotting
+                
                 # Sample action based on probabilities
                 action = np.random.choice(range(self.num_actions), p=action_probs)
                 # One-hot encode the action
@@ -288,7 +288,7 @@ class PPO:
                         avg_score = np.mean(running_reward[-25:])
                         print(f"Episode: {episode} Average Score: {avg_score}")
                     if avg_score >= 500:
-                        print(f"Episode {episode}: Reached score of {score}, stopping training.")
+                        print(f"Episode {episode}: Cartpole Solved! Reached avg score of {score} for over 25 episodes, stopping training.")
                         return
                     episode += 1
 
