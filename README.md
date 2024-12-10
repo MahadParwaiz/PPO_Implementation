@@ -74,7 +74,7 @@ PPO is a state-of-the-art policy optimization algorithm in reinforcement learnin
 ---
 
 ## **Results**
-![Fast solving of cartpolle-v1](Screenshot 2024-12-10 at 13.37.35.png)
+![Fast solving of cartpolle-v1](/Screenshot%202024-12-10%20at%2013.37.35.png)
 PPO achieves remarkable performance on the CartPole-v1 environment, stabilizing at a reward of **500** in less than 100 episodes. The detailed graphs provide insights into the training process, including:
 - Reward progression over episodes
 - The effectiveness of clipping in PPO's surrogate objective
