@@ -51,12 +51,12 @@ PPO is a state-of-the-art policy optimization algorithm in reinforcement learnin
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/MahadParwaiz/PPO_Implementation.git
-   cd PPO_Implementation
+   git clone https://github.com/MahadParwaiz/PPO.py.git
+   cd PPO.py
    ```
 
 2. **Install Dependencies**:
-   Make sure you have Python 3.x installed. Use the following command to install the required libraries:
+   Make sure you have Python 3.9 installed. Use the following command to install the required libraries:
    ```bash
    pip install tensorflow gym matplotlib
    ```
@@ -64,7 +64,7 @@ PPO is a state-of-the-art policy optimization algorithm in reinforcement learnin
 3. **Run the PPO Implementation**:
    Execute the script to train the agent on CartPole-v1:
    ```bash
-   python PPO_Implementation.py
+   python PPO.py
    ```
 
 4. **Analyze Results**:
@@ -74,7 +74,7 @@ PPO is a state-of-the-art policy optimization algorithm in reinforcement learnin
 ---
 
 ## **Results**
-![Fast solving of cartpolle-v1](/Users/mahadparwaiz/Desktop/Imperial College London/Reinforcement L/c2/Screenshot 2024-12-10 at 13.37.35.png)
+![Fast solving of cartpolle-v1](Screenshot 2024-12-10 at 13.37.35.png)
 PPO achieves remarkable performance on the CartPole-v1 environment, stabilizing at a reward of **500** in less than 100 episodes. The detailed graphs provide insights into the training process, including:
 - Reward progression over episodes
 - The effectiveness of clipping in PPO's surrogate objective
